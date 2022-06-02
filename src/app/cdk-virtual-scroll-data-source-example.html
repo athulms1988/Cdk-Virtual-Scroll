@@ -1,8 +1,22 @@
-<cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-  <div *cdkVirtualFor="let item of ds" class="example-item">{{item || 'Loading...'}}</div>
+<cdk-virtual-scroll-viewport itemSize="22" class="example-viewport">
+  <table style="width: 100%; height: 100%;">
+    <ng-container
+      *cdkVirtualFor="let item of ds"
+    >
+      <tr style="width:100%">
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+        <td>{{item || 'Loading...'}}</td>
+      </tr>
+    </ng-container>
+  </table>
 </cdk-virtual-scroll-viewport>
-
-
-<!-- Copyright 2022 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license -->
